@@ -1,6 +1,0 @@
-{
-    "target": "Vector",
-    "package": "com.example.wasteup.vector",
-    "generateImplementation": true,
-    "generatePreviews": true
-}

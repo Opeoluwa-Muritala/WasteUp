@@ -15,12 +15,13 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun AppButton(
     text: String = "Log In",
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    color: Color = Color.Green
 ) {
     Button(
         onClick = {onClick()},
         colors = ButtonDefaults.buttonColors(
-            containerColor = Color.Green
+            containerColor = color
         ),
         modifier = Modifier.fillMaxWidth().padding(10.dp),
         shape = RoundedCornerShape(10.dp)

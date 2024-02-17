@@ -1,4 +1,4 @@
-package com.example.wasteup.ui.theme.Views.SignUp
+package com.example.wasteup.ui.theme.OnboardingViews.SignUp
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -51,7 +51,6 @@ fun SignUp (
         mutableStateOf(true)
     }
     val viewModel = viewModel<signUp_and_signIn_ViewModel>()
-    val state by viewModel.state.collectAsState(initial = true)
 
     Column(
         Modifier
@@ -129,9 +128,9 @@ fun SignUp (
                 )
             }
         )
-        AppButton(text = "Sign Up") {
+        AppButton(text = "Sign Up", onClick = {
             viewModel.onClickButton(true)
-        }
+        })
         Row {
             Checkbox(
                 checked = check,

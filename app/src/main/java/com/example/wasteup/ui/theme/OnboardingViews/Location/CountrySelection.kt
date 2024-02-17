@@ -1,4 +1,4 @@
-package com.example.wasteup.ui.theme.Views.Location
+package com.example.wasteup.ui.theme.OnboardingViews.Location
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -7,28 +7,34 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.ArrowBack
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
+import com.example.wasteup.CountrySelectionBox
+import com.example.wasteup.Data.countries
+import com.example.wasteup.Navigation.NavRoute
 import com.example.wasteup.ui.theme.Components.AppButton
 
 @Composable
-fun SelectCountry() {
+fun SelectCountry(
+    navController: NavController
+) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -39,15 +45,13 @@ fun SelectCountry() {
         Column(
             modifier = Modifier
                 .fillMaxSize(),
-            verticalArrangement = Arrangement.spacedBy(10.dp),
+            verticalArrangement = Arrangement.spacedBy(15.dp),
             horizontalAlignment = Alignment.Start
         ) {
             Row {
 
                 Box(
                     modifier = Modifier
-                        .clip(CircleShape)
-                        .background(Color.LightGray)
                         .size(50.dp)
                 ) {
                     Icon(
@@ -61,17 +65,23 @@ fun SelectCountry() {
                         tint = Color.Black
                     )
                 }
-                Spacer(modifier = Modifier.width(50.dp))
-                Text(
-                    text = "Let's get started",
-                    color = Color.Black,
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 25.sp
-                )
+
+                Column {
+                    Spacer(modifier = Modifier.height(3.dp))
+                    Text(
+                        text = "Let's get started",
+                        color = Color.Black,
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 25.sp,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
             }
+
             Column {
                 Text(text = "Choose Country", fontWeight = FontWeight.Normal, fontSize = 15.sp)
-                TextField(value = "Search", onValueChange = {})
+                CountrySelectionBox(label = "country: e.g Nigeria", countries = countries)
             }
             Column(
                 verticalArrangement = Arrangement.spacedBy(10.dp),
@@ -80,17 +90,21 @@ fun SelectCountry() {
                     text = "Next, we need to know your location",
                     color = Color.Black,
                     fontWeight = FontWeight.Bold,
-                    fontSize = 25.sp
+                    fontSize = 13.sp
                 )
                 Text(
                     text = "To show you Nearby Upcycle stations and how many Upcyclers are in your location",
                     fontWeight = FontWeight.Normal,
-                    fontSize = 15.sp
+                    fontSize = 9.sp
                 )
             }
-            AppButton(text = "Continue") {
 
-            }
+            AppButton(
+                text = "Continue",
+                onClick = {
+                          navController.navigate(NavRoute.SelectLocation.route)
+                },
+            )
         }
 
     }
@@ -99,5 +113,5 @@ fun SelectCountry() {
 @Preview
 @Composable
 fun COuntySelectionPreview(){
-    SelectCountry()
+    SelectCountry(rememberNavController())
 }

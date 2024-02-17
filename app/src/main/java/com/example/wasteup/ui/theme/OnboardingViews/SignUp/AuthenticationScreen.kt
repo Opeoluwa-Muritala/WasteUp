@@ -1,4 +1,4 @@
-package com.example.wasteup.ui.theme.Views.SignUp
+package com.example.wasteup.ui.theme.OnboardingViews.SignUp
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

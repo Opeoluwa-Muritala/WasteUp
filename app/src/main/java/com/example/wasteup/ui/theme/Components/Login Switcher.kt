@@ -30,17 +30,17 @@ fun SwitchingButton(
 ) {
     Row(
         Modifier
-            .height(40.dp)
+            .height(60.dp)
             .width(180.dp)
-            .border(1.dp, Color.LightGray, RoundedCornerShape(10.dp))
+            .border(1.dp, Color.LightGray, RoundedCornerShape(20.dp))
     ){
         Box(
             Modifier
-                .size(90.dp, 40.dp)
+                .size(90.dp, 60.dp)
                 .padding(4.dp)
                 .background(
                     if (switch) Color.Green else Color.White,
-                    RoundedCornerShape(10.dp)
+                    RoundedCornerShape(20.dp)
                 )
         ){
             Text(
@@ -49,17 +49,17 @@ fun SwitchingButton(
                     .align(Alignment.Center)
                     .clickable { clickOne() },
                 color = if (switch) Color.White else Color.Black,
-                fontSize = 10.sp
+                fontSize = 16.sp
             )
         }
 
         Box(
             Modifier
-                .size(90.dp, 40.dp)
+                .size(90.dp, 60.dp)
                 .padding(4.dp)
                 .background(
                     if (!switch) Color.Green else Color.White,
-                    RoundedCornerShape(10.dp)
+                    RoundedCornerShape(20.dp)
                 )
         ){
             Text(
@@ -68,7 +68,7 @@ fun SwitchingButton(
                     .align(Alignment.Center)
                     .clickable { clickTwo() },
                 color =  if (!switch) Color.White else Color.Black,
-                fontSize = 10.sp
+                fontSize = 16.sp
 
             )
         }

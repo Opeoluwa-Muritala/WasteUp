@@ -1,4 +1,4 @@
-package com.example.wasteup.ui.theme.Views.SignUp
+package com.example.wasteup.ui.theme.OnboardingViews.SignUp
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -153,9 +153,11 @@ fun Login(
                 }
             )
         }
-        AppButton {
-            navController.navigate(NavRoute.SelectCountry.route)
-        }
+        AppButton(
+            onClick = {
+                navController.navigate(NavRoute.AccountType.route)
+            }
+        )
         Row(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically,
@@ -190,7 +192,7 @@ fun Login(
         }
         Spacer(modifier = Modifier.height(40.dp))
         SignWithGoogle {
-            navController.navigate(NavRoute.SelectCountry.route)
+            navController.navigate(NavRoute.AccountType.route)
         }
         Text(
             "Don't have an account?",

@@ -1,4 +1,4 @@
-package com.example.wasteup.ui.theme.Views.Onboarding
+package com.example.wasteup.ui.theme.OnboardingViews.Onboarding
 
 import androidx.compose.runtime.Composable
 
