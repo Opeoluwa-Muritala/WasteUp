@@ -90,12 +90,12 @@ fun SelectCountry(
                     text = "Next, we need to know your location",
                     color = Color.Black,
                     fontWeight = FontWeight.Bold,
-                    fontSize = 13.sp
+                    fontSize = 20.sp
                 )
                 Text(
                     text = "To show you Nearby Upcycle stations and how many Upcyclers are in your location",
                     fontWeight = FontWeight.Normal,
-                    fontSize = 9.sp
+                    fontSize = 15.sp
                 )
             }
 

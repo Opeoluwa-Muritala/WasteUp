@@ -164,7 +164,7 @@ fun SignUp (
             )
         }
         SignWithGoogle {
-            navController.navigate(NavRoute.SelectCountry.route)
+            navController.navigate(NavRoute.AccountType.route)
         }
         Text(
             "Already have an account?",

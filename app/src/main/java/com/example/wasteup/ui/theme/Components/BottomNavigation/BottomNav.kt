@@ -24,7 +24,7 @@ import androidx.navigation.NavController
 @Composable
 fun BottomMenu(navController: NavController){
     var selectedItemIndex by remember {
-        mutableIntStateOf(2)
+        mutableIntStateOf(0)
     }
 
 

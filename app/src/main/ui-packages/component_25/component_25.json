@@ -1,0 +1,472 @@
+{
+  "name": "component_25",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "qxdeKcLQEQIRLknx5sRrvM",
+    "node": "809:9168",
+    "version": "5186357238",
+    "component-id": "27a4083fb5b796ea68888c180c80cdabb18d02fb"
+  },
+  "default": "Component 25",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "group",
+        "id": "Headline"
+      },
+      {
+        "type": "group",
+        "id": "Headline Text"
+      },
+      {
+        "type": "group",
+        "id": "Button and Scroll"
+      },
+      {
+        "type": "text",
+        "id": "Welcome to WasteUp"
+      },
+      {
+        "type": "text",
+        "id": "Where trash becomes treasure, thriving communities, and making the planet smile, one upcycle at a time!"
+      },
+      {
+        "type": "group",
+        "id": "Scroll"
+      },
+      {
+        "type": "group",
+        "id": "Email default"
+      },
+      {
+        "type": "vector",
+        "id": "Active"
+      },
+      {
+        "type": "vector",
+        "id": "Inactive"
+      },
+      {
+        "type": "vector",
+        "id": "Inactive1"
+      },
+      {
+        "type": "group",
+        "id": "Icons/Arrow Up"
+      },
+      {
+        "type": "vector",
+        "id": "Vector1"
+      },
+      {
+        "type": "vector",
+        "id": "Vector2"
+      },
+      {
+        "type": "vector",
+        "id": "Vector3"
+      }
+    ],
+    "modes": {
+      "Component 25": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Vector",
+              "Headline"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "left": "0.000013164155632239272",
+              "top": "0.000016391769264600953",
+              "right": "0.00001735342249276073",
+              "bottom": "0.000014125808888820757"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.000004189266746834619"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-2.999969482421875"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector.svg"
+          },
+          {
+            "id": "Headline",
+            "margin": {
+              "left": "16.0",
+              "right": "16.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "36.14210510253906"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Headline Text",
+              "Button and Scroll"
+            ],
+            "item-spacing": "60.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Headline Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Welcome to WasteUp",
+              "Where trash becomes treasure, thriving communities, and making the planet smile, one upcycle at a time!"
+            ],
+            "item-spacing": "16.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Button and Scroll",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "Scroll",
+              "Email default"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Welcome to WasteUp",
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "213.33333333333331",
+              "saturation": "0.17999999999999994",
+              "value": "0.19607843137254902"
+            },
+            "text-content": "$Title",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "32.0",
+            "line-height": "1.193359375",
+            "typeface": "SF Pro Display"
+          },
+          {
+            "id": "Where trash becomes treasure, thriving communities, and making the planet smile, one upcycle at a time!",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.4117647058823529"
+            },
+            "text-content": "$Details",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "18.0",
+            "line-height": "1.193359375",
+            "typeface": "SF Pro Display"
+          },
+          {
+            "id": "Scroll",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Active",
+              "Inactive",
+              "Inactive1"
+            ],
+            "item-spacing": "4.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Email default",
+            "padding": {
+              "left": "20.0",
+              "top": "12.0",
+              "right": "20.0",
+              "bottom": "12.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$Next",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Icons/Arrow Up"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "152.11764705882354",
+              "saturation": "1.0",
+              "value": "0.6666666666666666"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Active",
+            "border-radius": "49.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "26.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "6.0"
+              }
+            },
+            "vector-content": "active.svg"
+          },
+          {
+            "id": "Inactive",
+            "border-radius": "49.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "6.0"
+              }
+            },
+            "vector-content": "inactive.svg"
+          },
+          {
+            "id": "Inactive1",
+            "border-radius": "49.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "6.0"
+              }
+            },
+            "vector-content": "inactive1.svg"
+          },
+          {
+            "id": "Icons/Arrow Up",
+            "relative-transform": [
+              [
+                "0.7071067690849304",
+                "-0.7071067690849304",
+                "0.0"
+              ],
+              [
+                "0.7071067690849304",
+                "0.7071067690849304",
+                "0.0"
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector1",
+              "Vector2",
+              "Vector3"
+            ]
+          },
+          {
+            "id": "Vector1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Vector2",
+            "margin": {
+              "left": "8.249579197440653",
+              "top": "8.24951171875"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-0.7500219407420445"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "5.142578125"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector1.svg"
+          },
+          {
+            "id": "Vector3",
+            "margin": {
+              "left": "9.42806801199913",
+              "top": "8.8388671875",
+              "bottom": "0.5545312762260437"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "4.553300768136978"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-0.75"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector2.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Title": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Details": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Next": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Component 25",
+      "size": {
+        "width": 375.0,
+        "height": 397.00006103515625
+      },
+      "parameters": {
+        "Title": "Welcome to WasteUp",
+        "Details": "Where trash becomes treasure, thriving communities, and making the planet smile, one upcycle at a time!"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

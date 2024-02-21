@@ -2,6 +2,8 @@ package com.example.startup_forge.AppUI.BottomNavigation
 
 import androidx.annotation.DrawableRes
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.AccountCircle
+import androidx.compose.material.icons.outlined.AddCircle
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.LocationOn
 import androidx.compose.material.icons.outlined.ShoppingCart
@@ -18,9 +20,9 @@ data class BottomNavItem(
     fun BottomNavItems(): List<BottomNavItem>{
         return listOf(
             BottomNavItem("Home", Icons.Outlined.Home , route = NavRoute.Home.route),
-            BottomNavItem("Community", imageId = R.drawable.community  , route = NavRoute.Community.route),
-            BottomNavItem("Location", icon = Icons.Outlined.LocationOn, route = NavRoute.Location.route),
-            BottomNavItem("Business", icon = Icons.Outlined.ShoppingCart, route = NavRoute.Recycling.route)
+            BottomNavItem("Explore", Icons.Outlined.AddCircle  , route = NavRoute.Explore.route),
+            BottomNavItem("Feed", icon = Icons.Outlined.LocationOn, route = NavRoute.Feed.route),
+            BottomNavItem("Profile", icon = Icons.Outlined.AccountCircle, route = NavRoute.Profile.route)
         )
     }
 

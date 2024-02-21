@@ -116,7 +116,7 @@ fun LocationScreen(navController: NavController) {
                 )
             }
             Column(
-                Modifier.fillMaxSize(0.6f),
+                Modifier.fillMaxSize(0.9f),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
@@ -125,7 +125,7 @@ fun LocationScreen(navController: NavController) {
                 color = Color.Green,
                 strokeWidth = 10.dp,
                 strokeCap = StrokeCap.Round,
-                modifier = Modifier.size(200.dp)
+                modifier = Modifier.size(150.dp)
             )
             }
 

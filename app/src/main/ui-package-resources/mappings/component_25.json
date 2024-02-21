@@ -1,0 +1,6 @@
+{
+    "target": "Component25",
+    "package": "com.example.wasteup.component25",
+    "generateImplementation": true,
+    "generatePreviews": true
+}

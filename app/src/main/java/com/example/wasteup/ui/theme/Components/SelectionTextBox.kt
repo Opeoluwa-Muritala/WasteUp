@@ -39,9 +39,9 @@ fun CountrySelectionBox(
     var searchText by remember { mutableStateOf("") }
 
     Box(modifier
-        .clickable(
-            enabled = true, onClick = { expanded = !expanded }
-        )) {
+        .clickable{
+             expanded = !expanded }
+    ) {
         OutlinedTextField(
             value = searchText,
             onValueChange = {
